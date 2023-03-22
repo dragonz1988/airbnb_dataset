@@ -30,9 +30,6 @@ chosen_place = st.sidebar.selectbox('Select a Location: ',(list_places),index=17
 st.sidebar.image(dict_places[chosen_place][2], caption=None, width=None,
                  use_column_width=None, clamp=False, channels="RGB",output_format="auto")
 
-print(dataframe)
-
-
 # Change chosen location on the dataframe
 dataframe.at[0, 'Latitude'] = dict_places[chosen_place][0]
 dataframe.at[0, 'Longitude'] = dict_places[chosen_place][1]
