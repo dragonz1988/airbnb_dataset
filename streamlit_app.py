@@ -3,11 +3,11 @@ import plotly.express as px
 import streamlit as st
 import numpy as np
 
-st.set_page_config(page_title="AirBnb Data Visualization", page_icon="https://a0.muscache.com/airbnb/static/icons/apple-touch-icon-180x180-bcbe0e3960cd084eb8eaf1353cf3c730.png", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="AirBnb Data Visualization", page_icon="airbnb.png", layout="wide", initial_sidebar_state="expanded")
 
 # Display title and text
 st.title("Week 1 - Data and visualization")
-st.markdown("Here we can see the dataframe created during this weeks project.")
+st.markdown("Here we can see the dataframe created during this week project.")
 
 # Read dataframe
 dataframe = pd.read_csv(
