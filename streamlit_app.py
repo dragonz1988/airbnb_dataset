@@ -6,6 +6,14 @@ import streamlit as st
 st.title("Week 1 - Data and visualization")
 st.markdown("Here we can see the dataframe created during this weeks project.")
 
+st.title("Welcome to Streamlit!")
+
+selectbox = st.sidebar.selectbox(
+    "Select yes or no",
+    ["Yes", "No"]
+)
+st.write(f"You selected {selectbox}")
+
 # Read dataframe
 dataframe = pd.read_csv(
     "WK1_Airbnb_Amsterdam_listings_proj_solution.csv",
